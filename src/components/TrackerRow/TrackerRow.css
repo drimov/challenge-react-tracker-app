@@ -1,0 +1,16 @@
+.TrackerRow td:nth-child(n+3) {
+  display: none;
+}
+
+.TrackerRow td:hover,
+.TrackerRow:hover {
+  cursor: pointer;
+  background-color: rgba(141, 42, 168);
+  color: white;
+}
+
+@media only screen and (min-width:768px) {
+  .TrackerRow td:nth-child(n+3) {
+    display: table-cell;
+  }
+}

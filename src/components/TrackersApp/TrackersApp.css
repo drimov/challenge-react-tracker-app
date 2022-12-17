@@ -1,0 +1,12 @@
+.TrackersApp {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.TrackersApp .css-1p5q5e5-MuiStack-root {
+  display: flex;
+  justify-self: center;
+  width: 25%;
+  margin: 20px auto;
+}

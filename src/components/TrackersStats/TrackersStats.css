@@ -1,0 +1,83 @@
+.TrackersStats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 25px auto;
+}
+
+/* Card */
+.TrackersStats div {
+  width: 90%;
+  margin: 15px auto;
+  position: relative;
+  overflow: visible;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+/* Card Header */
+.TrackersStats .MuiCardHeader-root {
+
+  /* display: none; */
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  height: 50px;
+  width: 50px;
+  z-index: 2;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+
+/* Card Content */
+.TrackersStats .MuiCardContent-root {
+  position: relative;
+  height: 45px;
+  align-items: center;
+  margin: 20px 0px 15px 50px;
+}
+
+.TrackersStats .MuiPaper-root:first-child .MuiCardHeader-root .MuiCardHeader-avatar>svg {
+  background-color: #449D47;
+}
+
+.TrackersStats .MuiPaper-root:nth-child(2) .MuiCardHeader-root .MuiCardHeader-avatar>svg {
+  background-color: #FC8D15;
+}
+
+.TrackersStats .MuiPaper-root:last-child .MuiCardHeader-root .MuiCardHeader-avatar>svg {
+  background-color: #0BA7C0;
+}
+
+@media only screen and (min-width:426px) {
+
+  .TrackersStats .MuiCardHeader-root {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .TrackersStats {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .TrackersStats .MuiPaper-root {
+    height: 60px;
+    width: fit-content;
+  }
+
+  .TrackersStats .MuiCardContent-root {
+    align-self: center;
+    justify-content: center;
+  }
+
+  .TrackersStats .MuiCardContent-root {
+    margin: 0 0 0 45px;
+  }
+}

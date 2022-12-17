@@ -1,0 +1,90 @@
+.TrackerTableBar {
+  position: absolute;
+  top: -35px;
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.TrackerTableBar>div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 75px;
+  color: white;
+}
+
+.TrackerTableBar>.MuiCardHeader-root,
+.TrackerTableBar div {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.TrackerTableBar div .MuiCardHeader-root .MuiCardHeader-action {
+  margin: 0px auto;
+}
+
+.TrackerTableBar div:last-child .MuiCardHeader-root .MuiCardHeader-content:first-child,
+.TrackerTableBar div:first-child .MuiCardHeader-root .MuiCardHeader-content,
+.TrackerTableBar div:first-child .MuiCardHeader-root:first-child {
+  display: none;
+}
+
+.TrackerTableBar div .MuiCardHeader-root .MuiCardHeader-content span {
+  font-size: 18px;
+}
+
+.TrackerTableBar div:first-child .MuiCardHeader-root:nth-child(n+2),
+.TrackerTableBar div:last-child>.MuiCardHeader-root {
+  cursor: pointer;
+}
+
+.TrackerTableBar div:first-child .MuiCardHeader-root:nth-child(n+2):hover,
+.TrackerTableBar div:last-child .MuiCardHeader-root:first-child:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.TrackerTableBar div:last-child>.MuiCardHeader-root:last-child:active {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+}
+
+@media only screen and (min-width:425px) {
+  .TrackerTableBar {
+    width: 95%;
+  }
+
+  .TrackerTableBar div {
+    margin: 0px 5px;
+  }
+}
+
+@media only screen and (min-width:768px) {
+
+  .TrackerTableBar {
+    justify-content: space-between;
+  }
+
+  .TrackerTableBar div {
+    margin: 0px 3px;
+  }
+
+  .TrackerTableBar>div:first-child .MuiCardHeader-root .MuiCardHeader-content,
+  .TrackerTableBar>div:last-child .MuiCardHeader-root:first-child .MuiCardHeader-content {
+    display: block;
+    padding: 0px 8px 0px 0px;
+  }
+
+}
+
+@media only screen and (min-width:1024px) {
+
+  .TrackerTableBar div:first-child .MuiCardHeader-root:first-child {
+    display: block;
+  }
+}

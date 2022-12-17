@@ -1,0 +1,19 @@
+.TrackerCategory {
+  background-color: #0BA7C0;
+}
+
+.TrackerCategory td {
+  font-size: 20px;
+  color: white;
+  font-weight: 800;
+}
+
+.TrackerCategory td:nth-child(n+3) {
+  display: none;
+}
+
+@media only screen and (min-width:768px) {
+  .TrackerCategory td:nth-child(n+3) {
+    display: table-cell;
+  }
+}

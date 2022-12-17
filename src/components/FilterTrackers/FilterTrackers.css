@@ -1,0 +1,54 @@
+.FilterTrackers {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 15px auto;
+}
+
+.FilterTrackers h4, .FilterTrackers input {
+  align-self: center;
+  margin: 5px auto;
+}
+
+.FilterTrackers h4 {
+  font-size: 1em;
+}
+
+.FilterTrackers div {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.FilterTrackers div svg {
+  display: none;
+}
+
+@media only screen and (min-width:426px)and (max-width:768px) {
+  .FilterTrackers {
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  .FilterTrackers h4 {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width:769px) {
+  .FilterTrackers {
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  .FilterTrackers h4 {
+    font-size: 1.75em;
+  }
+
+  .FilterTrackers div svg {
+    display: block;
+  }
+}
